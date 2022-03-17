@@ -37,7 +37,7 @@ const Recieve = ({setAction, selectedToken, walletAddress}) => {
               <Address>{walletAddress}</Address>
             </div>
             <CopyButton onClick={() => {
-              navigator.clipboard.writText(walletAddress)
+              navigator.clipboard.writeText(walletAddress)
               setCopied(true)
             }}>
               {copied ? <FaCheck style={{color:'#27ad75'}} /> : <BiCopy/>}
